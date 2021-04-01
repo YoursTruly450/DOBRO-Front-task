@@ -100,7 +100,7 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30.17px;
+  line-height: 30px;
   margin: 0;
 }
 
@@ -154,6 +154,97 @@ body {
 
 .order {
   position: relative;
+  margin-top: 30px;
+}
+
+.order__section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+}
+
+.time__header,
+.water__header {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23px;
+  margin: 0;
+}
+
+.water__section {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.water__input-group {
+  position: relative;
+}
+
+.water__img {
+  width: 96px;
+  height: 130px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.water__volume {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #455273;
+}
+
+.water__rest {
+  position: absolute;
+  top: 37px;
+  left: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  color: #BABDC2;
+}
+
+.water__cost {
+  position: absolute;
+  top: 103px;
+  left: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.water__input {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 8px;
+  height: 8px;
+}
+
+.water__submit {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.water__counter {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #455273;
 }
 
 .form-confirmation {
