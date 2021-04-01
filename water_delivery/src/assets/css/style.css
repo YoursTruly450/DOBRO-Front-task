@@ -1,0 +1,96 @@
+/* style.css start here */
+/* open-sans-regular - latin_cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/open-sans-v18-latin_cyrillic-ext-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/open-sans-v18-latin_cyrillic-ext-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+body {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  background: #E9EFFC;
+  margin: 0;
+  padding: 0;
+}
+
+.main-page {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 1440px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.clean-water {
+  position: relative;
+  top: 224px;
+  width: 320px;
+}
+
+.clean-water__figure {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 185px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clean-water__img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background: #fae1be;
+}
+
+.clean-water__figcaption{
+  position: absolute;
+  top: 155px;
+}
+
+.clean-water__figcaption-text {
+  height: 30px;
+  font-size: 24px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  margin: 0;
+}
+
+.clean-water__article {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: justify;
+  margin: auto;
+  margin-top: 40px;
+  width: 240px;
+}
+
+.form-selector {
+  position: relative;
+  margin-top: 30px;
+  width: 816px;
+  height: 719px;
+  margin-right: 150px;
+  background: #F5F8FF;
+  border-radius: 6px;
+}
+
+.form-confirmation {
+  position: relative;
+  top: 30px;
+  display: none;
+  width: 816px;
+  margin-right: 150px;
+}
