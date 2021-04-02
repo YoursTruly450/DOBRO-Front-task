@@ -235,6 +235,7 @@ body {
 
 .water__submit {
   position: relative;
+  height: 16px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -245,6 +246,138 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #455273;
+}
+
+.time__day {
+  position: relative;
+  margin-top: 20px;
+}
+
+.time__subheader {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.05em;
+  color: #BABDC2;
+  text-transform: uppercase;
+}
+
+.time__day-selector {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  width: 320px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time__img_arrows {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.time__img_arrows:hover {
+  background: #E5EDFF;
+}
+
+.time__selector-form  {
+  position: relative;
+}
+
+.time__selector-input {
+  display: none;
+}
+
+.time__label-no-text {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  left: -15px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: #E5EDFF;
+  user-select: none;
+}
+
+.time__label-weekday {
+  position: absolute;
+  top: 1px;
+  left: -5px;
+  font-style: normal;
+  font-weight: normal;
+  cursor: pointer;
+  font-size: 9px;
+  line-height: 11px;
+  text-align: center;
+  color: #9CAEDD;
+}
+
+.time__label-day {
+  position: absolute;
+  top: -12px;
+  left: -6px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #455273;
+}
+ 
+/* Checked */
+.time__selector-input:checked + .time__label-no-text {
+  background: #FFC369;
+}
+
+.time__hours-selector {
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  width: 320px;
+  justify-content: space-around;
+}
+
+.time__input-hours {
+  display: none;
+}
+
+.time__hours-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time__label-hours {
+  box-sizing: border-box;
+  height: 30px;
+  width: 90px;
+  padding: 7px;
+  background: #E5EDFF;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #455273;
+  background: #E5EDFF;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Checked */
+.time__input-hours:checked + .time__label-hours {
+  color: #ffffff;
+  background: #FFC369;
+}
+
+.time__label-hours:hover {
+  color: #ffffff;
+  background: #FFC369;
 }
 
 .form-confirmation {

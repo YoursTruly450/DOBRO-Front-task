@@ -14,6 +14,8 @@
             <span class="water__counter">{{bottle.count}}</span>
             <img src="../assets/img/btn_plus.png" alt="plus button" @click="addBottle(bottle)">
           </div>
+          <div v-else class="water__submit">
+          </div>
         </div>
       </section>
     </div>
