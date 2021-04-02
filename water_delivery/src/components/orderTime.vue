@@ -17,12 +17,14 @@
     </section>
     <section class="time__day-time">
       <h3 class="time__subheader">время</h3>
-      <div class="time__hours-selector">
+      <div v-if="times.length > 0" class="time__hours-selector">
         <div v-for="time in times" :key="time" class="time__hours-form">
           <input :id="time" type="radio" class="time__input-hours"
           v-model="selectedTime" :value="time" @click="selectTime(time)">
           <label class="time__label-hours" :for="time">{{time}}</label>
         </div>
+      </div>
+      <div v-else class="time__hours-selector">
       </div>
     </section>
   </div>
