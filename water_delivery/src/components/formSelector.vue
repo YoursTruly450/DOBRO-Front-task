@@ -1,7 +1,10 @@
 <template>
     <div>
-      <contacts class="contacts"></contacts>
+      <contacts class="contacts" @get-contacts="getContacts"></contacts>
       <order class="order"></order>
+      <section class="submit">
+        <input type="submit" @click="submitOrder" class="submit__input" value="Заказать воду">
+      </section>
     </div>
 </template>
 
@@ -17,14 +20,34 @@ export default {
     },
     props: {},
     data() {
-        return {};
+        return {
+          totalCost: 0,
+          name: '',
+          phone: '',
+          mail: '',
+          adress: '',
+          isCheckedPersonalData: null,
+          dateDay: '',
+          dateTime: '',
+        };
     },
     computed: {
+      isChecked() {
+        if (this.isCheckedPersonalData) {
+          return true;
+        } else {
+          return false;
+        }
+      }
     },
     created() {
     },
     mounted() {},
     methods: {
+      getContacts(data) {
+        console.log(data);
+      },
+      submitOrder(){},
     },
     watch: {},
 };

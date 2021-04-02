@@ -76,6 +76,7 @@ export default {
       } else {
         this.times = ['10:00 - 11:00', '12:00 - 13:00', '15:00 - 16:00'];
       }
+      this.selectedTime = null;
     },
     minusDay() {
       let minDate = new Date();

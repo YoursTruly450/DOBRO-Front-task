@@ -381,6 +381,62 @@ body {
   background: #FFC369;
 }
 
+.total {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 30px;
+  border-top: 1px dashed #D5DDE0;
+  border-bottom: 1px solid #D5DDE0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.total__header {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #455273;
+}
+
+.total__cost {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #455273;
+}
+
+.submit__input {
+  position: relative;
+  margin-top: 50px;
+  width: 165px;
+  height: 40px;
+  background: #418DE8;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.submit__input:hover {
+  background: #3570b8;
+}
+
 .form-confirmation {
   position: relative;
   top: 30px;

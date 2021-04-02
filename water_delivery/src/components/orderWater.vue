@@ -44,22 +44,31 @@ export default {
           this.bottles[index].checked = el;
         });
         return isChecked;
-      }
+      },
     },
     created() {
     },
     mounted() {},
     methods: {
       removeBottle(item) {
-       let index = item.key;
-       if (this.bottles[index].count > 0) {
-         this.bottles[index].count--;
-       }
+        let index = item.key;
+        if (this.bottles[index].count > 0) {
+          this.bottles[index].count--;
+        }
+        this.totalCostCalculate();
       },
       addBottle(item) {
         let index = item.key;
         this.bottles[index].count++;
+        this.totalCostCalculate();
       },
+      totalCostCalculate() {
+        let totalCost = 0;
+        this.bottles.forEach((el) => {
+          totalCost += el.cost * el.count;
+        });
+        this.$emit('get-total-cost', {data: totalCost});
+      }
     },
     watch: {},
 };
