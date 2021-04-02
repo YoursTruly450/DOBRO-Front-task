@@ -466,3 +466,149 @@ body {
   box-sizing: border-box;
   padding: 40px;
 }
+
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #455273;
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+}
+
+.header__img {
+  border-radius: 50%;
+}
+
+.order-information {
+  position: relative;
+  display: block;
+  margin-top: 40px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+.order-total {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #D5DDE0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.order-total__header {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #455273;
+}
+
+.order-total__cost {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #455273;
+}
+
+.order-message {
+  position: relative;
+  margin-top: 30px;
+}
+
+.order-message__article {
+  position: relative;
+  display: block;
+  text-align: justify;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #818FB3;
+  margin: 0;
+  padding: 0;
+}
+
+.order-submit {
+  position: relative;
+  margin-top: 30px;
+}
+
+.order-submit__input {
+  position: relative;
+  width: 165px;
+  height: 40px;
+  background: #418DE8;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.order-information__item {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px dashed #D5DDE0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.order-information__item-left {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #455273;
+}
+
+.order-information__item-right {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #BABDC2;
+}
+
+.order-information__phone {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}

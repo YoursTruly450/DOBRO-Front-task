@@ -5,7 +5,7 @@
         <input class="contacts__input" type="text" placeholder="Имя" v-model="name" @input="sendContacts" pattern="^[а-яёА-ЯЁa-zA-z -]+$">
         <input class="contacts__input" type="text" placeholder="e-mail" v-model="mail" @input="sendContacts" pattern="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">
         <input class="contacts__input" type="text" placeholder="Телефон" v-model="phone" @input="sendContacts" pattern="^(\+7|7|8)?[\s-]?\(?[489][0-9]{2}\)?[\s-]?[0-9]{3}[\s-]?[0-9]{2}[\s-]?[0-9]{2}$">
-        <input class="contacts__input" type="text" placeholder="Адрес" v-model="adress" @input="sendContacts" patter="^[а-яёa-z0-9 .-]{7,}">
+        <input class="contacts__input" type="text" placeholder="Адрес" v-model="adress" @input="sendContacts" patter="^[а-яёА-ЯЁa-zA-Z0-9 ,.-]{7,}">
         <div class="contacts__input-group">
           <input class="contacts__checkbox" type="checkbox" v-model="isCheckedPersonalData" @change="toggleChecked">
           <span class="contacts__traitement">Я согласен на 
@@ -48,7 +48,7 @@ export default {
         }
       },
       isAdress() {
-        if (/^[а-яёa-z0-9 .-]+$/i.test(this.adress)) {
+        if (/^[а-яёa-z0-9 ,.-]+$/i.test(this.adress)) {
           return true;
         } else {
           return false;

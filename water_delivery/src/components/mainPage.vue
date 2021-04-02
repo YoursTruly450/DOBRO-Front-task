@@ -2,7 +2,7 @@
   <div>
     <clean-water class="clean-water"></clean-water>
     <form-selector class="form-selector" @get-data="dataLoad"></form-selector>
-    <form-confirmation class="form-confirmation"></form-confirmation>
+    <form-confirmation :data="data" class="form-confirmation"></form-confirmation>
   </div>
 </template>
 
@@ -30,7 +30,7 @@ export default {
   mounted() {},
   methods: {
     dataLoad(data) {
-      console.log(data);
+      this.data = data.data;
     },
   },
   watch: {},

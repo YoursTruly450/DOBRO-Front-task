@@ -34,6 +34,7 @@ export default {
           conacts: {},
           delivery: {},
           items: [],
+          totalCost: 0,
         };
     },
     computed: {
@@ -53,6 +54,7 @@ export default {
       getOrder(data){
         this.delivery = data.delivery;
         this.items = data.items;
+        this.totalCost = data.data.totalCost;
         this.isTotalCost = data.data.isTotalCost;
         this.isDateDay = data.data.isDateDay;
         this.isDateTime = data.data.isDateTime;
@@ -77,6 +79,7 @@ export default {
         } else {
           this.message = 'Заказ успешно оформлен';
           let data = new Object();
+          data.totalCost = this.totalCost;
           data.delivery = this.delivery;
           data.contacts = this.contacts;
           data.items = this.items;
