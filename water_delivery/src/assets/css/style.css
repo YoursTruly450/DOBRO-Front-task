@@ -129,6 +129,11 @@ body {
   box-sizing: border-box;
 }
 
+.contacts__input:invalid {
+  color: red;
+  font-weight: 700;
+}
+
 .contacts__checkbox {
   width: 16px;
   height: 16px;

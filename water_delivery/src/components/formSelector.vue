@@ -21,31 +21,28 @@ export default {
     props: {},
     data() {
         return {
-          totalCost: 0,
-          name: '',
-          phone: '',
-          mail: '',
-          adress: '',
+          isTotalCost: null,
+          isName: null,
+          isPhone: null,
+          isMail: null,
+          isAdress: null,
           isCheckedPersonalData: null,
-          dateDay: '',
-          dateTime: '',
+          isDateDay: null,
+          isDateTime: null,
         };
     },
     computed: {
-      isChecked() {
-        if (this.isCheckedPersonalData) {
-          return true;
-        } else {
-          return false;
-        }
-      }
     },
     created() {
     },
     mounted() {},
     methods: {
       getContacts(data) {
-        console.log(data);
+        this.isName = data.isName;
+        this.isMail = data.isMail;
+        this.isPhone = data.isPhone;
+        this.isAdress = data.isAdress;
+        this.isChecked = data.isChecked;
       },
       submitOrder(){},
     },
