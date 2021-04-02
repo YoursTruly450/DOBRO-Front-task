@@ -76,7 +76,9 @@ export default {
       } else {
         this.times = ['10:00 - 11:00', '12:00 - 13:00', '15:00 - 16:00'];
       }
+      this.selectedDay = day;
       this.selectedTime = null;
+      this.sendTime();
     },
     minusDay() {
       let minDate = new Date();
@@ -96,9 +98,19 @@ export default {
         return el = this.dayObject(date);
       });
     },
-    selectTime(){
-      //emit
+    selectTime(time){
+      this.selectedTime = time;
+      this.sendTime();
     },
+    sendTime() {
+      let data = new Object();
+      let delivery = new Object();
+      delivery.day = this.selectedDay.stringDate;
+      delivery.time = this.selectedTime;
+      data.isDateDay = this.selectedDay === {} ? false : true;
+      data.isDateTime = this.selectedTime === null ? false : true;
+      this.$emit('get-delivery-date', {data: data, delivery: delivery});
+    }
   },
   watch: {},
 };

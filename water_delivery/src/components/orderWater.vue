@@ -63,11 +63,12 @@ export default {
         this.totalCostCalculate();
       },
       totalCostCalculate() {
+        let bottles = this.bottles.filter((el) => el.count > 0);
         let totalCost = 0;
         this.bottles.forEach((el) => {
           totalCost += el.cost * el.count;
         });
-        this.$emit('get-total-cost', {data: totalCost});
+        this.$emit('get-total-cost', {data: totalCost, items: bottles});
       }
     },
     watch: {},
